@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WishController::class, 'index']);
 
 // add a wish
-Route::post('/', [WishController::class, 'store']);
+Route::post('/add', [WishController::class, 'store']);
 
 // delete a wish
 Route::delete('/delete/{id}', [WishController::class, 'destory']);
